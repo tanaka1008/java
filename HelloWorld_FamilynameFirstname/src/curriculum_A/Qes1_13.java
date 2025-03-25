@@ -76,24 +76,24 @@ public class Qes1_13 {
 		System.out.println("BMIは" + BMI + "です");
 
 		name = "鈴木一郎";
-		age = 24 * 2;
-		height = 168.5 * 2;
-		weight = 64.2 * 2;
+		int x = 24;
+		int age2 =x * 2;
+				x = age2;
+		double y =168.5;
+		double height2 =y * 2;
+		y = height2;
+        double m= 64.2;
+        double weight2 = 64.2 * 2;
+        m = weight2;
 		hobby = "オムライス";
 
 		System.out.println("初めまして" + name + "です");
-		System.out.println("年齢は" + age + "歳です");
-		System.out.println("身長は" + height + "cmです");
-		System.out.println("体重は" + weight + "です");
+		System.out.println("年齢は" + age2 + "歳です");
+		System.out.println("身長は" + height2 + "cmです");
+		System.out.println("体重は" + weight2 + "です");
 		System.out.println("好きな食べ物は" + hobby + "です");
 		System.out.println("BMIは" + BMI / 2 + "です");
 		System.out.println(age > 25);
-
-		name = "鈴木一郎";
-		age = 24;
-		height = 168.5;
-		weight = 64.2;
-		hobby = "オムライス";
 
 		String age1 = String.valueOf(age);
 		String height1 = String.valueOf(height);
