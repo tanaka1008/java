@@ -77,20 +77,17 @@ public class Qes1_13 {
 
 		name = "鈴木一郎";
 		int x = 24;
-		int age2 =x * 2;
-				x = age2;
+		x += x;
 		double y =168.5;
-		double height2 =y * 2;
-		y = height2;
-        double m= 64.2;
-        double weight2 = 64.2 * 2;
-        m = weight2;
+		y += y; 
+        double z = 64.2;
+        z += z;
 		hobby = "オムライス";
 
 		System.out.println("初めまして" + name + "です");
-		System.out.println("年齢は" + age2 + "歳です");
-		System.out.println("身長は" + height2 + "cmです");
-		System.out.println("体重は" + weight2 + "です");
+		System.out.println("年齢は" + x + "歳です");
+		System.out.println("身長は" + y + "cmです");
+		System.out.println("体重は" + z + "です");
 		System.out.println("好きな食べ物は" + hobby + "です");
 		System.out.println("BMIは" + BMI / 2 + "です");
 		System.out.println(age > 25);
