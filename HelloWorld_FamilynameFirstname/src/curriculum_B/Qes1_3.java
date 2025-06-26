@@ -55,6 +55,7 @@ public class Qes1_3 {
 			}
 			userWins++;
 		}
+		//勝つまでにかかったじゃんけんの回数
 		System.out.println("\nおめでとうございます！勝つまでにかかった回数: " + userWins + "回");
 		sCanner.close();
 	}

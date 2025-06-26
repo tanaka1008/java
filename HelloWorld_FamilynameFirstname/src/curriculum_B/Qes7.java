@@ -7,7 +7,7 @@ public class Qes7 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-
+		//ログイン処理
 		System.out.println("生徒の人数を入力してください(2以上)");
 		int number = scanner.nextInt();
 		int[][] numbers = new int[number][4];
@@ -35,7 +35,7 @@ public class Qes7 {
 			average[i] = goukei[i] / subject.length;
 			System.out.println("平均点は" + average[i] + "点です");
 		}
-		
+
 		int goukeiS[] = new int[subject.length];
 		int[] subjectAve = new int[subject.length];
 		// 教科ごとの平均
