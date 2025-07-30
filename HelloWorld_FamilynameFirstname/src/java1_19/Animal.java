@@ -15,7 +15,7 @@ public class Animal {
 		Dog dog2 = new Dog(1);
 		System.out.println(dog2.count);
 
-		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
+		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください。
 		LocalDateTime nowDate = LocalDateTime.now();
 		System.out.println(nowDate);
 		@SuppressWarnings("unused")
