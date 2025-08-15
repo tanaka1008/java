@@ -2,7 +2,7 @@ package java_18;
 
 import java.util.Random;
 
-public class java_18{
+public class Java_18{
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
 	public static void M1(String a, int b) {
         System.out.println("Hello JavaSE 11");
@@ -55,7 +55,8 @@ public class java_18{
 	
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
 	  public static boolean M7(double a) {
-	        return a >= 50 ? true : false;
+		return false;
+	       
 	    }
 
 	public static void main(String[] args) {
