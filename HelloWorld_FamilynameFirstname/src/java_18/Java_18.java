@@ -55,7 +55,7 @@ public class Java_18{
 	
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
 	  public static boolean M7(double a) {
-		return false;
+		return a >= 50;
 	       
 	    }
 
