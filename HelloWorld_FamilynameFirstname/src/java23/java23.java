@@ -37,7 +37,7 @@ public class java23 {
 
     public static void main(String[] args) {
         java23 lion = new java23();
-        lion.setName("ライオン");
+    lion.setName("ライオン");	
         lion.setLength(2.1);
         lion.setSpeed(80);
 
