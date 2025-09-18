@@ -1,18 +1,17 @@
 package java27.a;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class AnimalInfo {
     public static void main(String[] args) {
-        
+
         Scanner scanner = new Scanner(System.in);
-        System.out.println("コンソールに文字を入力してください");
+        System.out.println("動物情報を入力してください（例: ライオン：2.1:80、ゾウ：3.2:40）：");
+        
+        String input = scanner.nextLine();
 
-        String input = "ライオン：2.1:80、ゾウ：3.2:40，パンダ：1.9:30，チンパンジー：0.94:25，シマウマ：2.4:65，インコ：0.1:50";
-
-        input = input.replace('、', ',').replace('，', ',');
+        input = input.replace('、', ',').replace('，', ',').replace('：', ':');
 
         String[] animals = input.split(",");
 
@@ -24,9 +23,8 @@ public class AnimalInfo {
         scientificNames.put("シマウマ", "チャップマンシマウマ");
         scientificNames.put("インコ", "不明");
 
-        // 出力処理
         for (String animalData : animals) {
-            String[] parts = animalData.split("：|:");
+            String[] parts = animalData.split(":");
             if (parts.length != 3) {
                 System.out.println("データ形式が正しくありません: " + animalData);
                 continue;
@@ -37,6 +35,7 @@ public class AnimalInfo {
             String speed = parts[2];
             String scientificName = scientificNames.getOrDefault(name, "不明");
 
+            System.out.println("-----");
             System.out.println("動物名：" + name);
             System.out.println("体長：" + length + "m");
             System.out.println("速度：" + speed + "km/h");
